@@ -8,17 +8,34 @@
             </ul>
             <div class="tab-content">
                 <div class="tab-pane active" id="tab_1">
-                    
+                    <button @click="$store.state.skin = 'skin-blue'">azul</button>
+                    <button @click="$store.state.skin = ''">nada</button>
                 </div>
-                <!-- /.tab-pane -->
                 <div class="tab-pane" id="tab_2">
                     
                 </div>
             </div>
         </aside>
-        <!-- /.control-sidebar -->
-        <!-- Add the sidebar's background. This div must be placed
-            immediately after the control sidebar -->
         <div class="control-sidebar-bg"></div>
+        <!-- Fin sidevar de la derecha  -->
     </div>
 </template>
+
+<script>
+export default {
+  name: 'Sidevar',
+  data() {
+    return {
+        color: 'skin-purple'
+    }
+  },
+  methods:{
+    cambio(){
+        this.color = 'skin-red'
+    }
+  },
+  mounted(){
+      
+  }
+}
+</script>

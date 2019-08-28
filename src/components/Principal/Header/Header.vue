@@ -11,7 +11,7 @@
         <nav class="navbar navbar-static-top">
             <!-- Button ambueguesa-->
             <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
-                <span class="sr-only">Toggle navigation</span>
+                <span class="sr-only">Navegación toggle</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -26,25 +26,25 @@
                         <span class="label label-warning">10</span>
                         </a>
                         <ul class="dropdown-menu">
-                        <li class="header">You have 10 notifications</li>
+                        <li class="header">Tienes 10 notificaciones</li>
                         <li>
                             <!-- inner menu: contains the actual data -->
                             <ul class="menu">
                             <li>
                                 <a href="#">
-                                <i class="fa fa-users text-aqua"></i> 5 new members joined today
+                                <i class="fa fa-users text-aqua"></i> 5 nuevos miembros se unieron hoy
                                 </a>
                             </li>
                             </ul>
                         </li>
-                        <li class="footer"><a href="#">View all</a></li>
+                        <li class="footer"><a href="#">Ver todo</a></li>
                         </ul>
                     </li>
                     <!-- User Account: style can be found in dropdown.less -->
                     <li class="dropdown user user-menu">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <img src="/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
-                        <span class="hidden-xs">Alexander Pierce</span>
+                        <span class="hidden-xs">Daniel Pérez</span>
                         </a>
                         <ul class="dropdown-menu">
                         <!-- User image -->
@@ -52,21 +52,21 @@
                             <img src="/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
 
                             <p>
-                            Alexander Pierce - Web Developer
-                            <small>Member since Nov. 2012</small>
+                            Daniel Pérez - Desarollador Web
+                            <small>Miembro desde 2019</small>
                             </p>
                         </li>
                         <!-- Menu Body -->
                         <li class="user-body">
                             <div class="row">
                             <div class="col-xs-4 text-center">
-                                <a href="#">Followers</a>
+                                <a href="#">Seguir</a>
                             </div>
                             <div class="col-xs-4 text-center">
-                                <a href="#">Sales</a>
+                                <a href="#">Ventas</a>
                             </div>
                             <div class="col-xs-4 text-center">
-                                <a href="#">Friends</a>
+                                <a href="#">Amigos</a>
                             </div>
                             </div>
                             <!-- /.row -->
@@ -74,10 +74,10 @@
                         <!-- Menu Footer-->
                         <li class="user-footer">
                             <div class="pull-left">
-                            <a href="#" class="btn btn-default btn-flat">Profile</a>
+                            <a href="#" class="btn btn-default btn-flat">Perfil</a>
                             </div>
                             <div class="pull-right">
-                            <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                            <a href="#" class="btn btn-default btn-flat">Salir</a>
                             </div>
                         </li>
                         </ul>
@@ -98,3 +98,5 @@ export default {
   name: 'Header',
 }
 </script>
+
+<style src="./Header.scss" lang="scss" scoped />
