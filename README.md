@@ -7,7 +7,7 @@ npm install
 ```
 
 ### Compilacion
-Para compilar y echar andar un servidor web local
+Para compilar y correr el servidor web local
 ```
 npm run serve
 ```
