@@ -27,13 +27,11 @@ export default {
   name: 'Sidevar',
   data() {
     return {
-        color: 'skin-purple'
+        
     }
   },
   methods:{
-    cambio(){
-        this.color = 'skin-red'
-    }
+    
   },
   mounted(){
       
