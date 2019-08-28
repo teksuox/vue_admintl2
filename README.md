@@ -12,12 +12,16 @@ Para compilar y echar andar un servidor web local
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Compilacion modo produccion
+Se crea una carpeta "dist" en el esta el proyecto en produccion
 ```
 npm run build
 ```
+### Fin
+Cualquier problema dejar un comentario, gracias.
 
-### Run your tests
+
+<!-- ### Run your tests
 ```
 npm run test
 ```
@@ -25,7 +29,7 @@ npm run test
 ### Lints and fixes files
 ```
 npm run lint
-```
+``` -->
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+<!-- ### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/). -->
