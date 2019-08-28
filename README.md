@@ -1,11 +1,13 @@
-# vue_admlte2
+# VueCli con AdminLTE2
 
-## Project setup
+## Instalacion
+Al descargar en el terminar de la misma carpeta agregar el siguente comando.
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Compilacion
+Para compilar y echar andar un servidor web local
 ```
 npm run serve
 ```
