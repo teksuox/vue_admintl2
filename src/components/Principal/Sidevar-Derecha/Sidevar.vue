@@ -10,7 +10,7 @@
                 <div class="tab-pane active" id="tab_1">
                     <button @click="$store.state.skin = 'skin-red'" type="button" class="btn btn-block btn-danger">Rojo</button>
                     <button @click="$store.state.skin = 'skin-blue'" type="button" class="btn btn-block btn-primary">Azul</button>
-                    <button @click="$store.state.skin = ''" type="button" class="btn btn-block btn-default">Sin Skin</button>
+                    <button @click="$store.state.skin = 'skin-black-light'" type="button" class="btn btn-block btn-default">Blanco</button>
                 </div>
                 <div class="tab-pane" id="tab_2">
                     
