@@ -8,7 +8,7 @@ export default new Vuex.Store({
     skin : 'skin-red'
   },
   mutations: {
-
+    
   },
   actions: {
 
