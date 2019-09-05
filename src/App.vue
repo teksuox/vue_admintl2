@@ -17,6 +17,9 @@ export default {
       this.$router.push('/app/blanco');
     }
 
+    if (!window.localStorage.getItem('skin')) {
+      this.$store.state.skin = 'skin-red'
+    }
   },
 };
 </script>

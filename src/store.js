@@ -5,7 +5,7 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    skin : 'skin-red'
+    skin : window.localStorage.getItem('skin')
   },
   mutations: {
     

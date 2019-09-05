@@ -188,6 +188,7 @@ export default {
   methods:{
     cambio_skin(color){
       this.$store.state.skin = color
+      window.localStorage.setItem('skin', this.$store.state.skin)
     }
   },
   mounted(){
