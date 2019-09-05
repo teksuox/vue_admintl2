@@ -6,6 +6,8 @@ import Login from './views/Paginas/Login/Login.vue'
 import App from './components/Principal/Layout/Layout.vue';
 import Blanco from './views/Paginas/Blanco/Blanco.vue';
 import Otro from './views/Paginas/Otro/Otro.vue';
+import General from './views/Paginas/General/General.vue';
+
 
 Vue.use(Router)
 
@@ -28,6 +30,10 @@ const router = new Router({
       component: App,
       children: [
         {
+          path: '*',
+          component: Blanco
+        },
+        {
           path: 'blanco',
           name: 'blanco',
           component: Blanco,
@@ -43,6 +49,14 @@ const router = new Router({
           //   auntentificado: true
           // }
         },
+        {
+          path: 'general',
+          name: 'general',
+          component: General,
+          // meta:{
+          //   auntentificado: true
+          // }
+        }
       ]
     }
   ]

@@ -18,6 +18,7 @@
         </div>
         <div class="box-body">
           Start creating your amazing application!
+          <h4>{{ruta}}</h4>
         </div>
         <div class="box-footer">
           Footer
@@ -26,3 +27,23 @@
     </section>
   </div>
 </template>
+
+<script>
+export default {
+  name: 'blanco',
+  data() {
+    return {
+      ruta : 'en blanco'
+    }
+  },
+  methods:{
+    rutas(){
+      const currentPath = this.$router.history.current.name;
+      this.ruta= currentPath
+    }
+  },
+  mounted(){
+    this.rutas()
+  }
+}
+</script>
