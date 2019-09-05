@@ -1,11 +1,11 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 
-import Login from './views/Paginas/Login/Login'
+import Login from './views/Paginas/Login/Login.vue'
 
-import App from './components/Principal/Layout/Layout';
-import Blanco from './views/Paginas/Blanco/Blanco';
-import Otro from './views/Paginas/Otro/Otro';
+import App from './components/Principal/Layout/Layout.vue';
+import Blanco from './views/Paginas/Blanco/Blanco.vue';
+import Otro from './views/Paginas/Otro/Otro.vue';
 
 Vue.use(Router)
 
