@@ -1,4 +1,4 @@
-# VueCli con AdminLTE2
+# VueCli con AdminLTE2 ;)
 
 ## Instalacion
 Al descargar, en el terminar de la misma carpeta agregar el siguente comando.
