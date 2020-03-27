@@ -42,7 +42,7 @@ export default {
   name: 'SidevarDerecha',
   data() {
     return {
-      ruta : 'en blanco'
+      ruta    : this.$router.history.current.name
     }
   },
   methods:{
@@ -50,6 +50,9 @@ export default {
       const currentPath = this.$router.history.current.name;
       this.ruta= currentPath
     }
+  },
+  mounted(){
+    console.log(this.ruta)
   }
 }
 </script>
