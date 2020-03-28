@@ -48,11 +48,13 @@ export default {
   methods:{
     rutas(){
       const currentPath = this.$router.history.current.name;
-      this.ruta= currentPath
+      this.ruta= currentPath;
+      console.log= currentPath;
     }
   },
   mounted(){
     console.log(this.ruta)
   }
+  
 }
 </script>
