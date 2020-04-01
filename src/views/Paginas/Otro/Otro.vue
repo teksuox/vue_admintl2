@@ -3,13 +3,10 @@
     <section class="content">
       <div class="box">
         <div class="box-body">
-          Otra Pagina oe!!!
-          
-          <vue-select class="vue-select2" name="select2"
-                :options="options2" :model.sync="result2"
-                :searchable="true" language="en-US">
-        </vue-select>
+         <h1>Vue Select</h1>
+          <v-select :options="options" :reduce="country => country.code" label="country" v-model="selected" />
         </div>
+        {{selected}}
       </div>
     </section>
   </div>
@@ -17,55 +14,17 @@
 
 <script>
 
+
 export default {
-  components: {
-    "vue-select": require("vue-select2")
-  },
   data () {
     return {
-      options1: [
-      "value1",
-      "value2",
-      "value3"
-    ],
-    options2: [{
-      text: "name1",
-      value: "value1"
-    }, {
-      text: "name2",
-      value: "value2"
-    }, {
-      text: "name3",
-      value: "value3"
-    }],
-    options3: [{
-      label: "group1",
-      options: [{
-        text: "name1",
-        value: "value1"
-      }, {
-        text: "name2",
-        value: "value2"
-      }, {
-        text: "name3",
-        value: "value3"
-      }]
-    }, {
-      label: "group2",
-      options: [{
-        text: "name4",
-        value: "value4"
-      }, {
-        text: "name5",
-        value: "value5"
-      }, {
-        text: "name6",
-        value: "value6"
-      }]
-    }],
-    result1: "",
-    result2: "",
-    result3: ""
+      options: [
+        ' ',
+        {code: 'CA', country: 'Canada'},
+        {code: 'CL', country: 'chile'},
+        {code: 'PR', country: 'peru'}
+      ],
+      selected : 'ca'
     }
   }
 }
