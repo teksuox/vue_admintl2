@@ -53,7 +53,7 @@ export default {
     }
   },
   mounted(){
-    console.log(this.ruta)
+    console.log(window.location.pathname)
   }
   
 }
