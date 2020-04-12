@@ -1,5 +1,5 @@
 <template>
-  <div id="Layout" class="wrapper" :class="$store.state.skin">
+  <div id="Layout" class="wrapper" style="height: auto; min-height: 100%;" :class="$store.state.skin">
     <Header />
     <Sidevar />
     <div class="content-wrapper">
