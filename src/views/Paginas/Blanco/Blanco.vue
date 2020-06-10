@@ -13,33 +13,54 @@
     </section>
     <section class="content">
       <div class="box">
-        <div class="box-header with-border">
-          <h3 class="box-title">Title</h3>
-        </div>
-        <div class="box-body">
-          Start creating your amazing application!
-          <h4>{{ruta}}</h4>
-        </div>
-        <div class="box-footer">
-          Footer
-        </div>
+        <button @click="prueba">traer User</button>
+        <form @submit.prevent="crear">
+          <input type="text" v-model="formulario.usuario" required>
+          <input type="text" v-model="formulario.clave" required>
+          <input type="text" v-model="formulario.clavemd5" required>
+          <button type="submit">crear usuario</button>
+        </form>
       </div>
     </section>
   </div>
 </template>
 
 <script>
+import $ from "jquery";
+let llave = 'qaz1wsx2'
+
 export default {
   name: 'blanco',
   data() {
     return {
-      ruta : 'en blanco'
+      ruta : 'en blanco',
+      formulario : {
+        usuario : '',
+        clave : '',
+        clavemd5 : ''
+      }
     }
   },
   methods:{
     rutas(){
       const currentPath = this.$router.history.current.name;
       this.ruta= currentPath
+    },
+    async prueba(){
+      try{
+        let respuesta = await $.post(`https://mvc.macoda.cl/usuario/traeruser?llave=${llave}`);
+        console.log(JSON.parse(respuesta));
+      }catch{
+        console.log('error de carga')
+      }
+    },
+    async crear(){
+      try{
+        let respuesta = await $.post(`https://mvc.macoda.cl/usuario/crearUser?llave=${llave}`, this.formulario);
+        console.log(JSON.parse(respuesta));
+      }catch{
+        console.log('error de carga')
+      }
     }
   },
   mounted(){
